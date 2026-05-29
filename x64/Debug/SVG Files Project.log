@@ -1,0 +1,11 @@
+﻿  Circle.cpp
+  Line.cpp
+  Rectangle.cpp
+  SVG Files Project.cpp
+  SVGDocument.cpp
+  Generating Code...
+C:\Users\Yony_\Desktop\FMI\2 semester\OOP\Repeat\SVG Files Project\SVG Files Project\SVGDocument.cpp(35,19): error C2511: 'void SVGDocument::withinRectanle(double,double,double,double) const': overloaded member function not found in 'SVGDocument'
+      C:\Users\Yony_\Desktop\FMI\2 semester\OOP\Repeat\SVG Files Project\SVG Files Project\SVGDocument.h(5,7):
+      see declaration of 'SVGDocument'
+  
+C:\Users\Yony_\Desktop\FMI\2 semester\OOP\Repeat\SVG Files Project\SVG Files Project\Line.cpp(22,1): error C4716: 'Line::containsPoint': must return a value
