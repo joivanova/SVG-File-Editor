@@ -137,6 +137,7 @@
     <ClInclude Include="Rectangle.h" />
     <ClInclude Include="Shape.hpp" />
     <ClInclude Include="SVGDocument.h" />
+    <ClInclude Include="Vector.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

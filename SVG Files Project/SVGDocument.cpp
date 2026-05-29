@@ -2,6 +2,7 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include <stdexcept>
 
 #include "Rectangle.h";
 #include "Circle.h";
@@ -128,9 +129,7 @@ void SVGDocument::load(const std::string& file)
 
 	if (!in.is_open())
 	{
-		std::cout << "Could not open file!" << std::endl;
-
-		return;
+		throw std::runtime_error("Could not open file!");
 	}
 
 	std::string line;
@@ -169,9 +168,7 @@ void SVGDocument::save() const
 
 	if (!out.is_open())
 	{
-		std::cout << "Could not save file!" << std::endl;
-
-		return;
+		throw std::runtime_error("Could not save file!");
 	}
 
 	out << "<?xml version=\"1.0\" standalone=\"no\"?>\n";
@@ -208,14 +205,12 @@ void SVGDocument::erase(int index)
 {
 	if (index < 1 || index > shapes.size())
 	{
-		std::cout << "There is no figure number " << index << "!" << std::endl;
-		return;
+		throw std::out_of_range("Invalid figure number!");
 	}
-
 
 	delete shapes[index - 1];//zashtoto erase maha pointera ot vectora no ne delete-va obekta
 
-	shapes.erase(shapes.begin() + (index - 1));//mesti iteratora v nachaloto, sled tova na index-1 pozicii i trie elementa
+	shapes.erase(index - 1);//mesti iteratora v nachaloto, sled tova na index-1 pozicii i trie elementa
 }
 
 void SVGDocument::translate(double dx, double dy)
@@ -233,8 +228,7 @@ void SVGDocument::translate(double dx, double dy, int index)
 
 	if (index < 1 || index > shapeSize)
 	{
-		std::cout << "There is no figure number " << index << "!" << std::endl;
-		return;
+		throw std::out_of_range("Invalid figure number!");
 	}
 	else
 	{

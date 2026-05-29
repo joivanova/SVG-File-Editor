@@ -5,12 +5,7 @@
 
 int main()
 {
-    //TODO: std::vector<std::unique_ptr<Shape>> shapes;
-    //main s unit testove
-    //da proverq trqbwa li nqkakvo dopylnenie za executeCommand kato dobavka komandi
-    //da napravq oshte edin klas dopylnitelna froma ili dopylnitelna funkciq
-    //da hvyrlqm greshki vmesto syobshteniq
-    //moj klas vector
+    //TODO:main s unit testove
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

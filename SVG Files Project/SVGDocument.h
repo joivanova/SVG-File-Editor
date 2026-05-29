@@ -1,6 +1,6 @@
 #pragma once
 #include <string>
-#include <vector>
+#include "Vector.hpp"
 #include "Shape.hpp"
 
 #include "Rectangle.h";
@@ -9,7 +9,7 @@
 class SVGDocument
 {
 private:
-	std::vector<Shape*> shapes;//polzvame din.kontejner kojto syhranqva ukazateli kym razlichni figuri
+	Vector<Shape*> shapes;//polzvame din.kontejner kojto syhranqva ukazateli kym razlichni figuri
 	std::string filename;
 
 	Rectangle* loadRectangle(const std::string& line);
@@ -21,6 +21,8 @@ private:
 
 public:
 	SVGDocument() = default;
+	SVGDocument(const SVGDocument& other) = delete;
+	SVGDocument& operator=(const SVGDocument& other) = delete;
 	~SVGDocument();
 
 	void setFilename(const std::string& file);

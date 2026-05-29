@@ -1,26 +1,4 @@
-﻿  CommandHandler.cpp
-C:\Users\Yony_\Desktop\FMI\2 semester\OOP\Repeat\SVG Files Project\SVG Files Project\SVGDocument.h(5,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  (compiling source file 'CommandHandler.cpp')
-  
-C:\Users\Yony_\Desktop\FMI\2 semester\OOP\Repeat\SVG Files Project\SVG Files Project\SVGDocument.h(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  (compiling source file 'CommandHandler.cpp')
-  
-C:\Users\Yony_\Desktop\FMI\2 semester\OOP\Repeat\SVG Files Project\SVG Files Project\SVGDocument.h(7,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  (compiling source file 'CommandHandler.cpp')
-  
-  SVGDocument.cpp
-C:\Users\Yony_\Desktop\FMI\2 semester\OOP\Repeat\SVG Files Project\SVG Files Project\SVGDocument.h(5,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  (compiling source file 'SVGDocument.cpp')
-  
-C:\Users\Yony_\Desktop\FMI\2 semester\OOP\Repeat\SVG Files Project\SVG Files Project\SVGDocument.h(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  (compiling source file 'SVGDocument.cpp')
-  
-C:\Users\Yony_\Desktop\FMI\2 semester\OOP\Repeat\SVG Files Project\SVG Files Project\SVGDocument.h(7,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  (compiling source file 'SVGDocument.cpp')
-  
-C:\Users\Yony_\Desktop\FMI\2 semester\OOP\Repeat\SVG Files Project\SVG Files Project\SVGDocument.cpp(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\Yony_\Desktop\FMI\2 semester\OOP\Repeat\SVG Files Project\SVG Files Project\SVGDocument.cpp(7,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\Yony_\Desktop\FMI\2 semester\OOP\Repeat\SVG Files Project\SVG Files Project\SVGDocument.cpp(8,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\Yony_\Desktop\FMI\2 semester\OOP\Repeat\SVG Files Project\SVG Files Project\SVGDocument.cpp(294,16): warning C4554: '|': check operator precedence for possible error; use parentheses to clarify precedence
-  Generating Code...
-  SVG Files Project.vcxproj -> C:\Users\Yony_\Desktop\FMI\2 semester\OOP\Repeat\SVG Files Project\x64\Debug\SVG Files Project.exe
+﻿CommandHandler.obj : error LNK2019: unresolved external symbol "private: void __cdecl CommandHandler::createCommand(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class SVGDocument &)" (?createCommand@CommandHandler@@AEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAVSVGDocument@@@Z) referenced in function "public: bool __cdecl CommandHandler::executeCommand(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class SVGDocument &)" (?executeCommand@CommandHandler@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAVSVGDocument@@@Z)
+CommandHandler.obj : error LNK2019: unresolved external symbol "private: void __cdecl CommandHandler::translateCommand(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class SVGDocument &)" (?translateCommand@CommandHandler@@AEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAVSVGDocument@@@Z) referenced in function "public: bool __cdecl CommandHandler::executeCommand(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class SVGDocument &)" (?executeCommand@CommandHandler@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAVSVGDocument@@@Z)
+CommandHandler.obj : error LNK2019: unresolved external symbol "private: void __cdecl CommandHandler::withinCommand(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class SVGDocument &)" (?withinCommand@CommandHandler@@AEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAVSVGDocument@@@Z) referenced in function "public: bool __cdecl CommandHandler::executeCommand(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class SVGDocument &)" (?executeCommand@CommandHandler@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAVSVGDocument@@@Z)
+C:\Users\Yony_\Desktop\FMI\2 semester\OOP\Repeat\SVG Files Project\x64\Debug\SVG Files Project.exe : fatal error LNK1120: 3 unresolved externals
